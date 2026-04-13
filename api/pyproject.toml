@@ -1,0 +1,20 @@
+[project]
+name = "lol-win-predictor-backend"
+version = "0.1.0"
+description = "FastAPI backend and ML runtime for a League of Legends win predictor"
+readme = "../README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.116.0",
+    "joblib>=1.4.2",
+    "pandas>=2.2.0",
+    "pydantic>=2.8.0",
+    "scikit-learn>=1.5.0",
+    "uvicorn>=0.30.0",
+    "pytest>=8.2.0",
+    "httpx>=0.28.1",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["..", "."]
+testpaths = ["tests", "../tests"]
